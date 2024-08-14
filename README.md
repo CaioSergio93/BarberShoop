@@ -5,21 +5,35 @@ Este é um projeto desenvolvido para gerenciar uma barbearia, com funcionalidade
 Você pode acessar o sistema ao vivo no Vercel clicando aqui.
 
 🚀 Tecnologias Utilizadas
+
 Frontend:
+
 React.js, Next.js
+
 Backend:
+
 Node.js, Express.js
+
 Banco de Dados:
+
 PostgreSQL (hospedado no Neon)
+
 ORM:
+
 TypeORM
+
 Outras Ferramentas:
+
 Docker
+
 ⚙️ Funcionalidades
+
 🧑‍💼 Cadastro de Clientes
+
 Os clientes podem se cadastrar, editar suas informações e até serem excluídos do sistema.
 
 📅 Agendamento de Serviços
+
 Os clientes podem selecionar serviços disponíveis e agendar horários de atendimento com os profissionais da barbearia.
 
 🔐 Autenticação
@@ -37,55 +51,54 @@ Docker
 Além disso, é bom ter um editor para trabalhar com o código, como VSCode.
 
 🔧 Instalação e Execução
+
 Clone o Repositório
-bash
-Copiar código
+
 git clone https://github.com/CaioSergio93/BarberShoop.git
+
 cd BarberShoop
+
 Configurando o Projeto
+
 Instale as dependências:
 
-bash
-Copiar código
 npm install
 Crie um arquivo .env com as variáveis de ambiente necessárias:
 
-bash
-Copiar código
 DATABASE_URL=postgres://user:password@<neon-endpoint>:5432/barbershoop
 JWT_SECRET=seu_secret_aqui
+
 Substitua <neon-endpoint> pelo endpoint fornecido pelo Neon.
 
 Inicie o Docker para executar os serviços necessários:
 
-bash
-Copiar código
 docker-compose up -d
 Execute as migrações do banco de dados com TypeORM:
 
-bash
-Copiar código
 npm run typeorm migration:run
+
 🚀 Rodando o Projeto
 Para iniciar o servidor localmente:
 
-bash
-Copiar código
 npm run dev
 A aplicação estará disponível em: http://localhost:3000.
 
 ✅ Testes
 Para executar os testes:
 
-bash
-Copiar código
 npm run test
+
 🤝 Contribuição
 Faça um fork do projeto
+
 Crie uma branch para sua feature (git checkout -b feature/NovaFeature)
+
 Commit suas alterações (git commit -m 'Adiciona nova feature')
+
 Push na sua branch (git push origin feature/NovaFeature)
+
 Abra um Pull Request
+
 📜 Licença
 Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
 
@@ -100,17 +113,29 @@ This project was developed to manage a barbershop, with features for service sch
 You can access the live system on Vercel by clicking here.
 
 🚀 Technologies Used
+
 Frontend:
+
 React.js, Next.js
+
 Backend:
+
 Node.js, Express.js
+
 Database:
+
 PostgreSQL (hosted on Neon)
+
 ORM:
+
 TypeORM
+
 Other Tools:
+
 Docker
+
 ⚙️ Features
+
 🧑‍💼 Client Registration
 Clients can register, edit their information, and even be removed from the system.
 
@@ -132,54 +157,52 @@ Docker
 Additionally, it’s good to have a code editor, such as VSCode.
 
 🔧 Installation and Execution
-Clone the Repository
-bash
-Copiar código
+
 git clone https://github.com/CaioSergio93/BarberShoop.git
 cd BarberShoop
+
 Project Setup
+
 Install the dependencies:
 
-bash
-Copiar código
 npm install
 Create a .env file with the necessary environment variables:
 
-bash
-Copiar código
 DATABASE_URL=postgres://user:password@<neon-endpoint>:5432/barbershoop
 JWT_SECRET=your_secret_here
 Replace <neon-endpoint> with the endpoint provided by Neon.
 
 Start Docker to run the required services:
 
-bash
-Copiar código
 docker-compose up -d
 Run the database migrations with TypeORM:
 
-bash
-Copiar código
 npm run typeorm migration:run
+
 🚀 Running the Project
+
 To start the server locally:
 
-bash
-Copiar código
 npm run dev
 The application will be available at: http://localhost:3000.
 
 ✅ Tests
 To run the tests:
 
-bash
-Copiar código
 npm run test
+
 🤝 Contributing
+
 Fork the project
+
 Create a branch for your feature (git checkout -b feature/NewFeature)
+
 Commit your changes (git commit -m 'Add new feature')
+
 Push to your branch (git push origin feature/NewFeature)
+
 Open a Pull Request
+
 📜 License
+
 This project is licensed under the MIT License. See the LICENSE file for more information.
