@@ -3,7 +3,7 @@ import { Card, CardContent } from "./card"
 import { Button } from "./button"
 import { MenuIcon } from "lucide-react"
 import { Sheet, SheetTrigger } from "./sheet"
-import SidebarSheet from "./sidebar-sheet"
+import SidebarSheet from "../sidebar-sheet"
 
 const Header = () => {
   return (
