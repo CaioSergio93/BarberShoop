@@ -25,7 +25,10 @@ const SidebarSheet = () => {
         {data?.user ? (
           <div className="flex items-center gap-2">
             <Avatar>
-              <AvatarImage src={data?.user?.image ?? ""} />
+              <AvatarImage
+                src={data?.user?.image || "/default-avatar.png"} // Defina uma imagem padrão
+                alt="User Avatar"
+              />
             </Avatar>
 
             <div>
@@ -34,7 +37,7 @@ const SidebarSheet = () => {
             </div>
           </div>
         ) : (
-          <>
+          <div>
             <h2 className="font-bold">Olá, faça seu login!</h2>
             <Dialog>
               <DialogTrigger asChild>
@@ -46,7 +49,7 @@ const SidebarSheet = () => {
                 <SignInDialog />
               </DialogContent>
             </Dialog>
-          </>
+          </div>
         )}
       </div>
 
